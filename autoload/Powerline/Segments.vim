@@ -3,7 +3,7 @@ let g:Powerline#Segments#segments = Pl#Segment#Init([
 	\ Pl#Segment#Create('TRUNCATE', '__truncate__'),
 	\
 	\ Pl#Segment#Create('paste_indicator' , '%{&paste ? "PASTE" : ""}', Pl#Segment#Modes('!N')),
-	\ Pl#Segment#Create('mode_indicator'  , '%{Powerline#Functions#GetMode()}|%n', Pl#Segment#Modes('!N')),
+	\ Pl#Segment#Create('mode_indicator'  , '%{Powerline#Functions#GetMode()} %n', Pl#Segment#Modes('!N')),
 	\ Pl#Segment#Create('fileinfo',
 		\ Pl#Segment#Create('flags.ro'    , '%{&readonly ? "$RO" : ""}'),
 		\ Pl#Segment#Create('filepath'    , '%{Powerline#Functions#GetFilepath()}', Pl#Segment#NoPadding()),
