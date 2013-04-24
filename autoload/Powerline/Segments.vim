@@ -7,7 +7,7 @@ let g:Powerline#Segments#segments = Pl#Segment#Init([
 	\ Pl#Segment#Create('fileinfo',
 		\ Pl#Segment#Create('flags.ro'    , '%{&readonly ? "$RO" : ""}'),
 		\ Pl#Segment#Create('filepath'    , '%{Powerline#Functions#GetFilepath()}%n ', Pl#Segment#NoPadding()),
-		\ Pl#Segment#Create('filename'    , '%F'),
+		\ Pl#Segment#Create('filename'    , '%t'),
 		\ Pl#Segment#Create('flags.mod'   , '%M'),
 		\ Pl#Segment#Create('flags.type'  , '%H%W'),
 	\ ),
